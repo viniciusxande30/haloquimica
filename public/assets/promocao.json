@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "produto": "Acetato de Cálcio Solução 0,25 M"
+    },
+    {
+        "id": 2,
+        "produto": "Acetato de Chumbo 5% (PV)"
+    },
+    {
+        "id": 3,
+        "produto": "Acido Acético Solução 0,1 N"
+    },
+    {
+        "id": 4,
+        "produto": "Ácido Acético Solução 1:2"
+    },
+    {
+        "id": 5,
+        "produto": "Ácido Acético Solução a 4%"
+    },
+    {
+        "id": 6,
+        "produto": "Ácido Acético + IsoOctano"
+    },
+    {
+        "id": 7,
+        "produto": "Ácido Bórico Solução a 2% c/ Indicador"
+    },
+    {
+        "id": 8,
+        "produto": "Ácido Calconcarboxilico Solução 0,4%"
+    },
+    {
+        "id": 9,
+        "produto": "Ácido Clorídrico Solução 30%"
+    }
+]

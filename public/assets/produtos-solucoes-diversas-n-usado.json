@@ -1,0 +1,582 @@
+[
+    {
+        "id": 1,
+        "produto": "Acetato de Cálcio Solução 0,25 M"        
+    },
+    {
+        "id": 2,
+        "produto": "Acetato de Chumbo 5% (PV)"
+    },
+    {
+        "id": 3,
+        "produto": "Acido Acético Solução 0,1 N"
+    },
+    {
+        "id": 4,
+        "produto": "Ácido Acético Solução 1:2"
+    },
+    {
+        "id": 5,
+        "produto": "Ácido Acético Solução a 4%"
+    },
+    {
+        "id": 6,
+        "produto": "Ácido Acético + IsoOctano"
+    },
+    {
+        "id": 7,
+        "produto": "Ácido Bórico Solução a 2% c/ Indicador"
+    },
+    {
+        "id": 8,
+        "produto": "Ácido Calconcarboxilico Solução 0,4%"
+    },
+    {
+        "id": 9,
+        "produto": "Ácido Clorídrico Solução 30%"
+    },
+    {
+        "id": 10,
+        "produto": "Ácido Clorídrico Solução 1 N"
+    },
+    {
+        "id": 11,
+        "produto": "Ácido Clorídrico Solução 2,4 N"
+    },
+    {
+        "id": 12,
+        "produto": "Ácido Fosfomolíbdico"
+    },
+    {
+        "id": 13,
+        "produto": "Ácido Oxálico Solução N/1"
+    },
+    {
+        "id": 14,
+        "produto": "Ácido Perclórico 0,1M Solução Acética"
+    },
+    {
+        "id": 15,
+        "produto": "Ácido Perclórico 0,75 N Solução Aquosa"
+    },
+    {
+        "id": 16,
+        "produto": "Ácido Perclórico 0,1N Solução Acética"
+    },
+    {
+        "id": 17,
+        "produto": "Ácido Periódico 0,1M"
+    },
+    {
+        "id": 18,
+        "produto": "Ácido Sulfídrico Solução Saturada"
+    },
+    {
+        "id": 19,
+        "produto": "Ácido Sulfurico Solução 0,1143 N"
+    },
+    {
+        "id": 20,
+        "produto": "Ácido Sulfurico Solução 2 N"
+    },
+    {
+        "id": 21,
+        "produto": "Ácido Tricloroacético Solução 10%"
+    },
+    {
+        "id": 22,
+        "produto": "Água Clorada"
+    },
+    {
+        "id": 23,
+        "produto": "Água de Barita"
+    },
+    {
+        "id": 24,
+        "produto": "Água de Cal"
+    },
+    {
+        "id": 25,
+        "produto": "Álcool Iodado Solução 0,15%"
+    },
+    {
+        "id": 26,
+        "produto": "Amido Solução 1 %"
+    },
+    {
+        "id": 27,
+        "produto": "Água Oxigenada 10 Volumes"
+    },
+    {
+        "id": 28,
+        "produto": "Benedict ( Glicose Qualitativa )"
+    },
+    {
+        "id": 29,
+        "produto": "Bicromato de Potássio Solução N / 10"
+    },
+    {
+        "id": 30,
+        "produto": "CETAB Solução 0,004M (Cetil Trimetil Amônio Brometo)"
+    },
+    {
+        "id": 31,
+        "produto": "Cloreto de Lítio 3 M Solução em etanol"
+    },
+    {
+        "id": 32,
+        "produto": "Cloreto de Sódio Solução N / 10"
+    },
+    {
+        "id": 33,
+        "produto": "Cloreto de Trifenil Tetrazólio 5% Solução Aquosa"
+    },
+    {
+        "id": 34,
+        "produto": "Cloridrato de Hidroxilamina Solução 10%"
+    },
+    {
+        "id": 35,
+        "produto": "Cloreto de Potássio 3 M ( Saturado com Cloreto de Prata )"
+    },
+    {
+        "id": 36,
+        "produto": "Cloreto de Potássio 3 M ( Solução Eletrolítica )"
+    },
+    {
+        "id": 37,
+        "produto": "E D T A Sal de Magnésio Solução 10%"
+    },
+    {
+        "id": 38,
+        "produto": "E D T A Solução 0,05 M"
+    },
+    {
+        "id": 39,
+        "produto": "E D T A Solução 0,0575 M"
+    },
+    {
+        "id": 40,
+        "produto": "Floroglucina 0,1% Solução em Éter"
+    },
+    {
+        "id": 41,
+        "produto": "Floroglucina 1% Solução em Éter"
+    },
+    {
+        "id": 42,
+        "produto": "Fluoreto de Sódio ( Solução antigoagulante )"
+    },
+    {
+        "id": 43,
+        "produto": "Follin Ciocalteau"
+    },
+    {
+        "id": 44,
+        "produto": "Hannus (bromo Iodo)"
+    },
+    {
+        "id": 45,
+        "produto": "Hidróxido de Amônia Solução 0,5 N"
+    },
+    {
+        "id": 46,
+        "produto": "Hidróxido de Cálcio Solução Saturada"
+    },
+    {
+        "id": 47,
+        "produto": "Hidróxido de Potássio 0,0125 N Solução Alcoólica"
+    },
+    {
+        "id": 48,
+        "produto": "Hidróxido de Sódio Solução 0,01 N"
+    },
+    {
+        "id": 49,
+        "produto": "Hidróxido de Sódio Solução 0,278 M"
+    },
+    {
+        "id": 50,
+        "produto": "Indicador UNIVERSAL pH 1,00 - 12,00"
+    },
+    {
+        "id": 51,
+        "produto": "Iodato de Potássio Solução 0,0025 N"
+    },
+    {
+        "id": 52,
+        "produto": "Iodato de Potássio Solução N / 10"
+    },
+    {
+        "id": 53,
+        "produto": "Iodeto Azida"
+    },
+    {
+        "id": 54,
+        "produto": "Iodeto de Potássio Solução 10 %"
+    },
+    {
+        "id": 55,
+        "produto": "Iodeto de Potássio Solução N / 10 – 0,1N"
+    },
+    {
+        "id": 56,
+        "produto": "Iodeto Iodato de Potássio Solução 0,025 N"
+    },
+    {
+        "id": 57,
+        "produto": "Iodeto Iodato de Potássio N / 10 – 0,1N"
+    },
+    {
+        "id": 58,
+        "produto": "Iodeto Iodato de Potássio N / 40"
+    },
+    {
+        "id": 59,
+        "produto": "Iodo Bromo Seg Hannus (Ver Bromo Iodo Seg Hannus)"
+    },
+    {
+        "id": 60,
+        "produto": "Iodo Solução N / 10"
+    },
+    {
+        "id": 61,
+        "produto": "Iodo Solução 0,01 N"
+    },
+    {
+        "id": 62,
+        "produto": "Iodo Alcoólico Solução 2,6 % ( P / V )"
+    },
+    {
+        "id": 63,
+        "produto": "Iodo Cloro Seg Wijs ( P / Det Índice Iodo )"
+    },
+    {
+        "id": 64,
+        "produto": "Indicador UNIVERSAL pH 1,00 - 12,00"
+    },
+    {
+        "id": 65,
+        "produto": "Johannessen ( Sangue )"
+    },
+    {
+        "id": 66,
+        "produto": "Lauril Sulfato de Sódio Solução 0,004 M"
+    },
+    {
+        "id": 67,
+        "produto": "Líquido de Brecher"
+    },
+    {
+        "id": 68,
+        "produto": "Líquido de Drabkin"
+    },
+    {
+        "id": 69,
+        "produto": "Negro de Eriocromo em trietanolamina"
+    },
+    {
+        "id": 70,
+        "produto": "Negro de Eriocromo em NaCl (mistura sólida)"
+    },
+    {
+        "id": 71,
+        "produto": "Neisser \" A \" ( Azul de Metileno )"
+    },
+    {
+        "id": 72,
+        "produto": "Nessler ( Amoniaco )"
+    },
+    {
+        "id": 73,
+        "produto": "Nitrato de Chumbo Solução 0,01 M"
+    },
+    {
+        "id": 74,
+        "produto": "Nitrato de Lítio 3000 Meq / L"
+    },
+    {
+        "id": 75,
+        "produto": "Nitrato de Mercúrio ICO Solução 0,003 N"
+    },
+    {
+        "id": 76,
+        "produto": "Nitrato de Prata 1 ML = 1 Mg de NaCl"
+    },
+    {
+        "id": 77,
+        "produto": "Nitrato de Prata Solução 0,1N , N / 10"
+    },
+    {
+        "id": 78,
+        "produto": "Nonne Appelt Solução"
+    },
+    {
+        "id": 79,
+        "produto": "Obermayer"
+    },
+    {
+        "id": 80,
+        "produto": "Orceina Acética Solução 1%"
+    },
+    {
+        "id": 81,
+        "produto": "Orto-Tolidina ( Para Determinação de Cloro Residual )"
+    },
+    {
+        "id": 82,
+        "produto": "Oxalato de Amônio Solução 1 %"
+    },
+    {
+        "id": 83,
+        "produto": "Oxido de Arsenioso Solução 0,1 N"
+    },
+    {
+        "id": 84,
+        "produto": "Paul – Heller"
+    },
+    {
+        "id": 85,
+        "produto": "Pepsina P / Limpeza de Eletrodo"
+    },
+    {
+        "id": 86,
+        "produto": "Permanganato de Potássio Solução N / 10"
+    },
+    {
+        "id": 87,
+        "produto": "Permanganato de Potássio Solução 1 N"
+    },
+    {
+        "id": 88,
+        "produto": "Resorcina Solução Alcoolica 2 %"
+    },
+    {
+        "id": 89,
+        "produto": "Roberts ( Albumina )"
+    },
+    {
+        "id": 90,
+        "produto": "Rodamina B 0,1 % Solução"
+    },
+    {
+        "id": 91,
+        "produto": "Rothera Ross ( Acetona )"
+    },
+    {
+        "id": 92,
+        "produto": "Safrarina \" O \""
+    },
+    {
+        "id": 93,
+        "produto": "Schiff ( Aldeidos )"
+    },
+    {
+        "id": 94,
+        "produto": "Shiller"
+    },
+    {
+        "id": 95,
+        "produto": "Solução Sabão Boutron Boudet ( Dureza D' Água )"
+    },
+    {
+        "id": 96,
+        "produto": "Solução Sabão Segundo Clarck 1 mL = 1 Mg = de CACO3"
+    },
+    {
+        "id": 97,
+        "produto": "Solução Equivalente de Areia"
+    },
+    {
+        "id": 98,
+        "produto": "Solução Neutra"
+    },
+    {
+        "id": 99,
+        "produto": "Solução Sulfocromica"
+    },
+    {
+        "id": 100,
+        "produto": "Solução Tampão Glicina"
+    },
+    {
+        "id": 101,
+        "produto": "Solução Tampão pH 1,00 ± 0,05"
+    },
+    {
+        "id": 102,
+        "produto": "Solução Tampão pH 2,00 ± 0,05"
+    },
+    {
+        "id": 103,
+        "produto": "Solução Tampão pH 3,00 ± 0,05"
+    },
+    {
+        "id": 104,
+        "produto": "Solução Tampão pH 4,00 ± 0,05"
+    },
+    {
+        "id": 105,
+        "produto": "Solução Tampão pH 4,00 ± 0,05"
+    },
+    {
+        "id": 106,
+        "produto": "Solução Tampão pH 6,86 ± 0,05"
+    },
+    {
+        "id": 107,
+        "produto": "Solução Tampão pH 7,00 ± 0,05"
+    },
+    {
+        "id": 108,
+        "produto": "Solução Tampão pH 7,00 ± 0,05"
+    },
+    {
+        "id": 109,
+        "produto": "Solução Tampão pH 7,01 ± 0,05"
+    },
+    {
+        "id": 110,
+        "produto": "Solução Tampão pH 8,00 ± 0,05"
+    },
+    {
+        "id": 111,
+        "produto": "Solução Tampão pH 9,00 ± 0,05"
+    },
+    {
+        "id": 112,
+        "produto": "Solução Tampão pH 9,00 ± 0,05"
+    },
+    {
+        "id": 113,
+        "produto": "Solução Tampão pH 9,18 ± 0,05"
+    },
+    {
+        "id": 114,
+        "produto": "Solução Tampão pH 10,00 ± 0,05"
+    },
+    {
+        "id": 115,
+        "produto": "Solução Tampão pH 10,01 ± 0,05"
+    },
+    {
+        "id": 116,
+        "produto": "Solução Tampão pH 11,0 ± 0,05"
+    },
+    {
+        "id": 117,
+        "produto": "Solução Tampão pH 12,0 ± 0,05"
+    },
+    {
+        "id": 118,
+        "produto": "Solução Tampão pH com Cianeto"
+    },
+    {
+        "id": 119,
+        "produto": "Sulfato Cerico Amoniacal Solução 0,1 N"
+    },
+    {
+        "id": 120,
+        "produto": "Sulfato Cerico Solução 0,1 N"
+    },
+    {
+        "id": 121,
+        "produto": "Sulfato de Cobre Solução 0,1 N"
+    },
+    {
+        "id": 122,
+        "produto": "Sulfato de Cobre Solução 10 %"
+    },
+    {
+        "id": 123,
+        "produto": "Sulfato de Hidrazina Solução 0,015%"
+    },
+    {
+        "id": 124,
+        "produto": "Sulfato de Magnésio Solução 20 %"
+    },
+    {
+        "id": 125,
+        "produto": "Sulfato de Zinco Solução 33,3 %"
+    },
+    {
+        "id": 126,
+        "produto": "Sulfato Ferroso Solução 0,1N"
+    },
+    {
+        "id": 127,
+        "produto": "Sulfato Ferroso Amoniacal Solução N / 10"
+    },
+    {
+        "id": 128,
+        "produto": "Sulfito de Sódio 1 M"
+    },
+    {
+        "id": 129,
+        "produto": "Sulfito de Sódio 23 %"
+    },
+    {
+        "id": 130,
+        "produto": "Takata \" A \""
+    },
+    {
+        "id": 131,
+        "produto": "Tampão Borato (ver Amonia Buffer)"
+    },
+    {
+        "id": 132,
+        "produto": "Tampão Borato (pH 8,6)"
+    },
+    {
+        "id": 133,
+        "produto": "Tampão Fosfatos Solução 0,05 N"
+    },
+    {
+        "id": 134,
+        "produto": "Tampão Fosfato Solução"
+    },
+    {
+        "id": 135,
+        "produto": "Tetraborato de Sódio Solução 0,1 N"
+    },
+    {
+        "id": 136,
+        "produto": "Timolftaleina ( pH 9,3 - 10,5 )"
+    },
+    {
+        "id": 137,
+        "produto": "Tintura de Iodo Solução Solução 1 %"
+    },
+    {
+        "id": 138,
+        "produto": "Tiocianato de Amônio Solução N / 10"
+    },
+    {
+        "id": 139,
+        "produto": "Tiocianato de Potássio Solução 1 N"
+    },
+    {
+        "id": 140,
+        "produto": "Tioureia Solução para Limpeza de Eletrodo"
+    },
+    {
+        "id": 141,
+        "produto": "Tollens"
+    },
+    {
+        "id": 142,
+        "produto": "Tollet Densidade = 2,0714"
+    },
+    {
+        "id": 143,
+        "produto": "Trioxido Cromo Sat Solução"
+    },
+    {
+        "id": 144,
+        "produto": "Xantogenato de Potássio Solução 2 %"
+    },
+    {
+        "id": 145,
+        "produto": "Xileno Cianol FF ( Alaranjado de Metila pH 3,9 )"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 2,
+        "categoria": "Solu\u00e7\u00f5es Diversas",
+        "produto": "Acetato de Chumbo 5% (PV)",
+        "fispq": "acetato-de-chumbo5.pdf"
+    },
+    {
+        "id": 3,
+        "categoria": "Solu\u00e7\u00f5es Diversas",
+        "produto": "Teste",
+        "fispq": "Teste"
+    },
+    {
+        "id": 3,
+        "categoria": null,
+        "produto": "Acetato de Etila",
+        "fispq": "uploads\/pdf_6506ee7adc217.pdf"
+    },
+    {
+        "id": 4,
+        "categoria": null,
+        "produto": "Teste",
+        "fispq": "uploads\/pdf_6506ef0c0baf5.pdf"
+    }
+]
