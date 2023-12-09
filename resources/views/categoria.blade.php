@@ -119,7 +119,7 @@ $url_sem_public;
 
 
 $urlSpecial = str_replace("/produtos-e-servicos", "",url('/'));
-echo $urlSpecial;
+//echo $urlSpecial;
 ?>
 
 
@@ -176,16 +176,9 @@ echo $urlSpecial;
                 const vsBtn = document.createElement("a");
                 vsBtn.classList.add("vs-btn", "style3");
 
-                if (item.fispq !== null) {
-                    // Se o campo fispq não for nulo, configure o link
-                    vsBtn.href = '{{$url_sem_public}}/public/' + extractFileNameFromURL(item.fispq);
-                    vsBtn.textContent = "Confira a FISPQ";
-                    vsBtn.innerHTML += '<i class="far fa-long-arrow-right"></i>';
-                } else {
                     // Se o campo fispq for nulo, mostre a mensagem "Entre em Contato"
                     vsBtn.href = '{{url('/')}}'+'/fale-conosco';
                     vsBtn.textContent = "Entre em Contato";
-                }
 
                 serviceDiv.appendChild(h3);
                 serviceDiv.appendChild(vsBtn);

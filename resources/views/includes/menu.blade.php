@@ -22,7 +22,7 @@
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="{{url('/')}}"><img src="assets/img/logo.png" alt="TechBiz" class="logo"></a>
+                <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="Haloquímica" class="logo"></a>
             </div>
             <div class="vs-mobile-menu">
                 <ul>
@@ -118,7 +118,7 @@
                 <div class="row justify-content-between align-items-center gx-sm-0">
                     <div class="col">
                         <div class="header-logo">
-                            <a href="index.html"><img src="assets/img/logo.png" alt="TechBiz" class="logo"></a>
+                            <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="TechBiz" class="logo"></a>
                         </div>
                     </div>
                     <div class="col-auto header-info ">
@@ -148,7 +148,7 @@
                             <nav class="main-menu menu-style1 d-none d-lg-block">
                                 <ul>
                                     <li class="menu-item-has-children">
-                                        <a href="{{url('/')}}"><span class="has-new-lable">Página Inicial</span></a>
+                                        <a href="{{url('/')}}">Home</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/quem-somos">Quem Somos</a>
@@ -157,10 +157,16 @@
                                         <a href="{{url('/')}}/produtos-e-servicos">Produtos e Serviços</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/')}}/produtos-em-promocao">Produtos em Promoção<span class="new-label">Confira!</span></a>
+                                        <a href="{{url('/')}}/produtos-em-promocao">Promoção<span class="new-label">Confira!</span></a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/tabela-de-precos">Tabela de Preços</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" data-toggle="modal" data-target="#cnpjModal">Laudos</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" data-toggle="modal" data-target="#cnpjModalFispq">Fispq</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/pesquisa-de-satisfacao">Pesquisa de Satisfação</a>
@@ -177,3 +183,63 @@
     <!--==============================
       Hero Area
     ==============================-->
+
+     <!--==============================
+    Mobile Menu
+  ============================== -->
+  <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="TechBiz" class="logo"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                <li class="menu-item-has-children">
+                    <a href="{{url('/')}}"><span class="has-new-lable">Home</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('/')}}/quem-somos">Quem Somos</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('/')}}/produtos-e-servicos">Produtos e Serviços</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('/')}}/produtos-em-promocao">Promoção</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('/')}}/tabela-de-precos">Tabela de Preços</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('/')}}/pesquisa-de-satisfacao">Pesquisa de Satisfação</a>
+                                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="sticky-wrapper" style="">
+            <div class="sticky-active">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>

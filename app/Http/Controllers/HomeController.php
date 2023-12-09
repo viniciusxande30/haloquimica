@@ -67,6 +67,61 @@ class HomeController extends Controller
     }
 
 
+    public function fispqexibirPorCategoria($urlCategoria)
+    {
+        // Lógica para buscar produtos com base na URL da categoria
+        $produtos = []; // Inicialize um array vazio
+        $fisqps = [];
+
+        // Caminho para o arquivo JSON
+        $caminhoJSON = storage_path('app/public/data.json');
+
+        // Verifica se o arquivo JSON existe
+        if (file_exists($caminhoJSON)) {
+            $dadosJSON = file_get_contents($caminhoJSON);
+            $dados = json_decode($dadosJSON, true);
+
+            // Filtrar produtos com base na URL da categoria
+            foreach ($dados as $produto) {
+                if (isset($produto['url']) && $produto['url'] === $urlCategoria) {
+                    $produtos[] = $produto;
+                    //$fisqps[] = $fisqp;
+                }
+            }
+        }
+
+        return view('fispqcategoria', ['urlCategoria' => $urlCategoria, 'produtos' => $produtos]);
+    }
+
+
+
+    public function laudosexibirPorCategoria($urlCategoria)
+    {
+        // Lógica para buscar produtos com base na URL da categoria
+        $produtos = []; // Inicialize um array vazio
+        $fisqps = [];
+
+        // Caminho para o arquivo JSON
+        $caminhoJSON = storage_path('app/public/data_laudos.json');
+
+        // Verifica se o arquivo JSON existe
+        if (file_exists($caminhoJSON)) {
+            $dadosJSON = file_get_contents($caminhoJSON);
+            $dados = json_decode($dadosJSON, true);
+
+            // Filtrar produtos com base na URL da categoria
+            foreach ($dados as $produto) {
+                if (isset($produto['url']) && $produto['url'] === $urlCategoria) {
+                    $produtos[] = $produto;
+                    //$fisqps[] = $fisqp;
+                }
+            }
+        }
+
+        return view('laudoscategoria', ['urlCategoria' => $urlCategoria, 'produtos' => $produtos]);
+    }
+
+
 
 
 }

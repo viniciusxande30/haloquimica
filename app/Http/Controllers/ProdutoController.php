@@ -111,6 +111,160 @@ class ProdutoController extends Controller
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function laudos()
+    {
+        $dados = $this->laudoslerDadosJSON();
+        return view('produtos.laudos', compact('dados'));
+    }
+
+    public function laudoscriar(Request $request)
+    {
+        $produtoNome = $request->input('produto');
+        $categorias = $request->input('categorias'); // Categorias separadas por vírgula
+        $urlNome = Str::slug($request->input('produto'));
+        $fispq = null;
+
+        if ($request->hasFile('fispq') && $request->file('fispq')->isValid()) {
+            $extensao = $request->file('fispq')->getClientOriginalExtension();
+            $novoNomeArquivo = uniqid('pdf_') . '.' . $extensao;
+            $request->file('fispq')->storeAs('public/pdf_laudos', $novoNomeArquivo);
+            $fispq = 'storage/app/public/pdf_laudos/'.$novoNomeArquivo;
+        }
+        $promocao = 0;
+
+        $dados = $this->laudoslerDadosJSON();
+
+        $novoProduto = [
+            'id' => count($dados) + 1,
+            'produto' => $produtoNome,
+            'categorias' => $categorias,
+            'url' => $urlNome,
+            'fispq' => $fispq,
+            'promocao' => 0,
+        ];
+
+        $dados[] = $novoProduto;
+        $this->laudossalvarDadosJSON($dados);
+
+        return redirect()->route('produtos.laudos');
+    }
+
+    public function laudosexcluir($id)
+    {
+        $dados = $this->laudoslerDadosJSON();
+        $produtoEncontrado = false;
+
+        foreach ($dados as $key => $produto) {
+            if ($produto['id'] == $id) {
+                // Remove o arquivo PDF, se existir
+                if (!empty($produto['fispq'])) {
+                    Storage::delete('public/' . str_replace('storage/', '', $produto['fispq']));
+                }
+                unset($dados[$key]);
+                $produtoEncontrado = true;
+                break;
+            }
+        }
+
+        if ($produtoEncontrado) {
+            $dados = array_values($dados);
+            $this->laudossalvarDadosJSON($dados);
+        }
+
+        return redirect()->route('produtos.index');
+    }
+
+    private function laudoslerDadosJSON()
+    {
+        $jsonFile = storage_path('app/public/data_laudos.json');
+
+        if (file_exists($jsonFile)) {
+            $json_data = file_get_contents($jsonFile);
+            $dados = json_decode($json_data, true);
+
+            // Verifica se "categorias" já existe em cada entrada e adiciona se necessário
+            foreach ($dados as &$produto) {
+                if (!isset($produto['categorias'])) {
+                    $produto['categorias'] = [];
+                }
+            }
+
+            return $dados;
+        }
+
+        return [];
+    }
+
+    private function laudossalvarDadosJSON($dados)
+    {
+        $jsonFile = storage_path('app/public/data_laudos.json');
+
+        // Remove referências às categorias se elas estiverem vazias
+        foreach ($dados as &$produto) {
+            if (empty($produto['categorias'])) {
+                unset($produto['categorias']);
+            }
+        }
+
+        $json_data = json_encode($dados, JSON_PRETTY_PRINT);
+        file_put_contents($jsonFile, $json_data);
+    }
+    public function laudosserveFile($filename)
+    {
+        $filePath = 'public/pdf_laudos/' . $filename;
+        
+        if (Storage::exists($filePath)) {
+            return Storage::download($filePath);
+        }
+
+        abort(404); // Retorna um erro 404 se o arquivo não for encontrado
+    }
+    public function laudosgetJsonFile()
+    {
+        $filePath = storage_path('app/public/data_laudos.json');
+        
+        if (file_exists($filePath)) {
+            return response()->file($filePath);
+        }
+
+        abort(404); // Retorna um erro 404 se o arquivo não for encontrado
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function editarPromocao()
     {
         // Carregue o arquivo JSON

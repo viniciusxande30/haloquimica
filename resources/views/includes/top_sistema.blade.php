@@ -151,13 +151,13 @@
                                         <a href="{{url('/')}}"><span class="has-new-lable">Página Inicial</span></a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/')}}/produtos">Área de Produtos</a>
+                                        <a href="{{url('/')}}/produtos">Área de Produtos e Fispq</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/editar-promocao">Produtos em Promoção</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/')}}/todos-produtos">Lista de Todos os Produtos</a>
+                                        <a href="{{url('/')}}/laudos">Área de Laudos</a>
                                     </li>
                                     
 

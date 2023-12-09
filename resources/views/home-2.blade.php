@@ -32,8 +32,8 @@
                 </h1>
                 <div style="top:540px; left:80px; background-size:inherit; background-position:inherit; font-size:24px;" class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                     <div class="ls-btn-group">
-                        <a href="about.html" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
-                        <a href="blog.html" class="vs-btn style2 ls-hero-btn">READ MORE<i class="far fa-arrow-right"></i></a>
+                        <a href="{{url('/')}}/quem-somos" class="vs-btn ls-hero-btn">QUEM SOMOS<i class="far fa-arrow-right"></i></a>
+                        <a href="{{url('/')}}/fale-conosco" class="vs-btn style2 ls-hero-btn">FALE CONOSCO<i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <h1 style="top:120px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:130px; color:#ffffff; font-family:Exo; width:10000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
@@ -44,8 +44,8 @@
                 </h1>
                 <div style="top:520px; left:50%; text-align:center; background-size:inherit; background-position:inherit; font-size:24px; width:1000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                     <div class="ls-btn-group">
-                        <a href="about.html" class="vs-btn ls-hero-btn">ABOUT US<i class="far fa-arrow-right"></i></a>
-                        <a href="blog.html" class="vs-btn style2 ls-hero-btn">READ MORE<i class="far fa-arrow-right"></i></a>
+                    <a href="{{url('/')}}/quem-somos" class="vs-btn ls-hero-btn">QUEM SOMOS<i class="far fa-arrow-right"></i></a>
+                        <a href="{{url('/')}}/fale-conosco" class="vs-btn style2 ls-hero-btn">FALE CONOSCO<i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <a class="ls-l ls-hide-tablet ls-hide-phone" href="#next" target="_self" data-ls="static:forever;">

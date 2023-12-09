@@ -71,8 +71,10 @@
                             <h3 class="widget_title">Outros Acessos</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="{{url('/')}}/laudos">Laudos</a></li>
-                                    <li><a href="{{url('/')}}/fispq">Fispq</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#cnpjModal">Laudos</a></li>
+                                    <!-- Button trigger modal -->
+
+                                    <li><a href="{{url('/')}}/fispq"  data-toggle="modal" data-target="#cnpjModalFispq">Fispq</a></li>
                                 </ul>
                             </div>
                         </div>

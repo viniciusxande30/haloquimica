@@ -28,9 +28,9 @@
                     <div class="service-style1 layout2">
                         <div class="service-bg background-image" style="background-image: url(&quot;assets/img/bg/sr-box-bg-1.jpg&quot;);"></div>
                         <div class="service-icon"><img src="assets/img/icon/sr-icon-1-3.png" alt="Features"></div>
-                        <h3 class="service-title h5"><a href="{{url('/')}}/todos-produtos">Confira os Produtos</a></h3>
-                        <p class="service-text">Confira Todos os Produtos da Haloquímica</p>
-                        <a href="{{url('/')}}/todos-produtos" class="vs-btn style3">Acessar<i class="far fa-long-arrow-right"></i></a>
+                        <h3 class="service-title h5"><a href="{{url('/')}}/todos-produtos">Área de Laudos</a></h3>
+                        <p class="service-text">Adicione, Exclua e Faça Upload de Arquivos PDF</p>
+                        <a href="{{url('/')}}/laudos" class="vs-btn style3">Acessar<i class="far fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
