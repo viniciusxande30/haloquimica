@@ -133,6 +133,7 @@ class ProdutoController extends Controller
     public function laudoscriar(Request $request)
     {
         $produtoNome = $request->input('produto');
+        $codigoLote = $request->input('codigo');
         $categorias = $request->input('categorias'); // Categorias separadas por vírgula
         $urlNome = Str::slug($request->input('produto'));
         $fispq = null;
@@ -150,6 +151,7 @@ class ProdutoController extends Controller
         $novoProduto = [
             'id' => count($dados) + 1,
             'produto' => $produtoNome,
+            'codigo' => $codigoLote,
             'categorias' => $categorias,
             'url' => $urlNome,
             'fispq' => $fispq,
@@ -184,7 +186,7 @@ class ProdutoController extends Controller
             $this->laudossalvarDadosJSON($dados);
         }
 
-        return redirect()->route('produtos.index');
+        return redirect()->route('produtos.laudos');
     }
 
     private function laudoslerDadosJSON()

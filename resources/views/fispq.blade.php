@@ -45,7 +45,7 @@ $url_sem_public = str_replace("/public", "",$url_com_public);
 $url_sem_public;
 ?>
 
-    <script>
+<script>
     let jsonData = []; // Variável para armazenar o JSON
     let uniqueCategories = []; // Lista de categorias únicas
 
@@ -65,20 +65,19 @@ $url_sem_public;
     searchInput.addEventListener("input", function () {
         const searchTerm = searchInput.value.toLowerCase();
         const filteredCategories = uniqueCategories.filter(category =>
-            category.includes(searchTerm)
+            category.toLowerCase().includes(searchTerm)
         );
 
         displayCategories(filteredCategories);
     });
 
     function createSlug(string) {
-    return string
-        .toLowerCase() // Converte para letras minúsculas
-        .trim() // Remove espaços em branco no início e no final
-        .replace(/[^A-Za-z0-9-]+/g, '-') // Substitui caracteres especiais por hífens
-        .replace(/-+/g, '-'); // Remove múltiplos hífens consecutivos
-}
-
+        return string
+            .toLowerCase() // Converte para letras minúsculas
+            .trim() // Remove espaços em branco no início e no final
+            .replace(/[^A-Za-z0-9-]+/g, '-') // Substitui caracteres especiais por hífens
+            .replace(/-+/g, '-'); // Remove múltiplos hífens consecutivos
+    }
 
     function displayCategories(categories) {
         resultsDiv.innerHTML = "";
@@ -101,7 +100,7 @@ $url_sem_public;
 
             //Você pode adicionar um link para cada categoria, se necessário
             const vsBtn = document.createElement("a");
-            vsBtn.href = "diretorio-de-fispq/"+createSlug(category); // Coloque a URL correta aqui, se necessário
+            vsBtn.href = "diretorio-de-fispq/" + createSlug(category); // Coloque a URL correta aqui, se necessário
             vsBtn.classList.add("vs-btn", "style3");
             vsBtn.textContent = "Acesse Esta Categoria";
             vsBtn.innerHTML += '<i class="far fa-long-arrow-right"></i>';

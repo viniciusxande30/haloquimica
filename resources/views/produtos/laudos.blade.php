@@ -25,6 +25,7 @@ $url_sem_public;
     <tr>
       <th scope="col">#</th>
       <th scope="col">Produto</th>
+      <th scope="col">Código</th>
       <th scope="col">Categoria</th>
       <th scope="col">Laudos</th>
       <th scope="col">URL</th>
@@ -47,7 +48,10 @@ $url_sem_public;
                     </td>
                     <td>
                         {{ $produto['produto'] }}
-                    </td> 
+                    </td>
+                    <td>
+                    {{ $produto['codigo'] }}
+                    </td>  
                     <td>
                     {{ $produto['categorias'] }}
                     </td> 
@@ -71,26 +75,6 @@ $url_sem_public;
             <p>Nenhum produto encontrado.</p>
         @endif
 
-
-
-    <!-- <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr> -->
   </tbody>
 </table>
                             </div>
@@ -111,6 +95,11 @@ $url_sem_public;
         <div class="col-md-12 form-group">
             <label for="categorias">Nome da Categoria:</label>
             <input type="text" name="categorias" id="categorias" required>
+        </div>
+
+        <div class="col-md-12 form-group">
+            <label for="codigo">Código do Lote:</label>
+            <input type="text" name="codigo" id="codigo" required>
         </div>
 
         <div class="col-md-12 form-group">

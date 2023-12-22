@@ -15,83 +15,7 @@
 
 
    
-    <!--==============================
-    Mobile Menu
-  ============================== -->
-    <div class="vs-menu-wrapper">
-        <div class="vs-menu-area text-center">
-            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="Haloquímica" class="logo"></a>
-            </div>
-            <div class="vs-mobile-menu">
-                <ul>
-                    <li class="menu-item-has-children">
-                        <a href="{{url('/')}}">Home</a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Home 1 - Layerslider</a></li>
-                            <li><a href="index-slickslider.html">Home 1 - Slickslider <span class="new-label">new</span></a></li>
-                            <li><a href="index-2.html">Home 2 - Layerslider</a></li>
-                            <li><a href="index-2-slickslider.html">Home 2 - Slickslider <span class="new-label">new</span></a></li>
-                            <li><a href="index-3.html">Home 3 - Layerslider</a></li>
-                            <li><a href="index-3-slickslider.html">Home 3 - Slickslider <span class="new-label">new</span></a></li>
-                            <li><a href="index-4.html">Home 4 - Layerslider <span class="new-label">new</span></a></li>
-                            <li><a href="index-4-slickslider.html">Home 4 - Slickslider <span class="new-label">new</span></a></li>
-                            <li><a href="index-5.html">Home 5 - Layerslider <span class="new-label">new</span></a></li>
-                            <li><a href="index-5-slickslider.html">Home 5 - Slickslider <span class="new-label">new</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="about.html">About Us</a>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="blog.html">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog List</a></li>
-                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#none">Pages</a>
-                        <ul class="sub-menu">
-                            <li><a href="price-plan.html">Pricing Plans</a></li>
-                            <li><a href="project.html">Projects</a></li>
-                            <li><a href="project-details.html">Projects Details</a></li>
-                            <li><a href="service.html">Service</a></li>
-                            <li><a href="service-details.html">Service Details</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="team-details.html">Team Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#none"><span class="has-new-lable">Elements<span class="new-label">new</span></span></a>
-                        <ul class="sub-menu">
-                            <li><a href="element-typography.html">Typography</a></li>
-                            <li><a href="element-buttons.html">Buttons</a></li>
-                            <li><a href="element-columns.html">Columns</a></li>
-                            <li><a href="element-messagebox.html">Message Box</a></li>
-                            <li><a href="element-separators.html">Separators</a></li>
-                            <li><a href="element-services.html">Services Card</a></li>
-                            <li><a href="element-testimonials.html">Testimonials</a></li>
-                            <li><a href="element-projectbox.html">Project Box</a></li>
-                            <li><a href="element-priceplan.html">Price Plan</a></li>
-                            <li><a href="element-counters.html">Counters</a></li>
-                            <li><a href="element-accordions.html">Accordions</a></li>
-                            <li><a href="element-team.html">Team</a></li>
-                            <li><a href="element-process.html">Process</a></li>
-                            <li><a href="element-blogcard.html">Blog Card</a></li>
-                            <li><a href="element-ctas.html">Call To Actions</a></li>
-                            <li><a href="element-map.html">Google Map</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+   
     <!--==============================
         Header Area
     ==============================-->
@@ -113,12 +37,32 @@
                 </div>
             </div>
         </div>
+
+        <?php
+// Verifica se o usuário está acessando a partir de um dispositivo desktop
+function isDesktop() {
+    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+    $desktopAgents = array('Windows', 'Macintosh', 'Linux');
+
+    foreach ($desktopAgents as $agent) {
+        if (strpos($userAgent, $agent) !== false) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// Inicia a verificação
+if (isDesktop()) {
+    // Se for um dispositivo desktop, exibe o código HTML correspondente
+    ?>
         <div class="container">
             <div class="menu-top">
                 <div class="row justify-content-between align-items-center gx-sm-0">
                     <div class="col">
                         <div class="header-logo">
-                            <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="TechBiz" class="logo"></a>
+                            <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="Haloquímica" class="logo"></a>
                         </div>
                     </div>
                     <div class="col-auto header-info ">
@@ -147,7 +91,7 @@
                         <div class="col-auto">
                             <nav class="main-menu menu-style1 d-none d-lg-block">
                                 <ul>
-                                    <li class="menu-item-has-children">
+                                    <li>
                                         <a href="{{url('/')}}">Home</a>
                                     </li>
                                     <li>
@@ -166,7 +110,7 @@
                                     <a href="#" data-toggle="modal" data-target="#cnpjModal">Laudos</a>
                                     </li>
                                     <li>
-                                    <a href="#" data-toggle="modal" data-target="#cnpjModalFispq">Fispq</a>
+                                    <a href="#" data-toggle="modal" data-target="#cnpjModalFispq">FISPQ (FDS)</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/pesquisa-de-satisfacao">Pesquisa de Satisfação</a>
@@ -180,6 +124,7 @@
             </div>
         </div>
     </header>
+<?php } ?>
     <!--==============================
       Hero Area
     ==============================-->
@@ -191,7 +136,7 @@
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="TechBiz" class="logo"></a>
+                <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="Haloquímica" class="logo"></a>
             </div>
             <div class="vs-mobile-menu">
                 <ul>
@@ -229,17 +174,26 @@
 
 
 
-
-
+<?php
+    // Inicia a verificação
+if (!isDesktop()) {
+    // Se for um dispositivo desktop, exibe o código HTML correspondente
+    ?>
     <div class="sticky-wrapper" style="">
             <div class="sticky-active">
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
+                        
+                        <div class="col">
+                        <div class="mobile-logo">
+                <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="TechBiz" class="logo"></a>
+            </div>
+</div>
+<div class="col-auto">
                             <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
+        <?php } ?>

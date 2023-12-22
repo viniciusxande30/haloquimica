@@ -1,6 +1,5 @@
 @include('includes.top')
 @include('includes.menu')
-
     <section class="vs-hero-wrapper position-relative  ">
     <section class="vs-hero-wrapper position-relative  ">
         <div class="vs-hero-carousel" data-height="850" data-container="1900" data-slidertype="responsive">
@@ -36,10 +35,10 @@
                         <a href="{{url('/')}}/fale-conosco" class="vs-btn style2 ls-hero-btn">FALE CONOSCO<i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <h1 style="top:120px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:130px; color:#ffffff; font-family:Exo; width:10000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                ESPECIALIZADO EM 
+                <h1 style="top:120px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#ffffff; font-family:Exo; width:10000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
+                ESPECIALIZADO EM SOLUÇÕES QUÍMICAS
                 </h1>
-                <h1 style="top:280px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:130px; font-family:Exo; color:#ffffff; width:10000px; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
+                <h1 style="top:280px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; font-family:Exo; color:#ffffff; width:10000px; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
                 PARA AS MAIS DIFERENTES ÁREAS
                 </h1>
                 <div style="top:520px; left:50%; text-align:center; background-size:inherit; background-position:inherit; font-size:24px; width:1000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
@@ -83,16 +82,19 @@ indústria On-shore e Off-shore com atendimento especializado em resolução de 
                 </h1>
                 <div style="top:540px; left:80px; background-size:inherit; background-position:inherit; font-size:24px;" class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                     <div class="ls-btn-group">
-                        <a href="about.html" class="vs-btn ls-hero-btn">SAIBA MAIS<i class="far fa-arrow-right"></i></a>
+                        <a href="{{url('/')}}/fale-conosco" class="vs-btn ls-hero-btn">SAIBA MAIS<i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <h1 style="top:120px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:130px; color:#ffffff; font-family:Exo; width:10000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
-                CONFIRA NOSSOS PRODUTOS OFFSHORE
+                <h1 style="top:120px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#ffffff; font-family:Exo; width:10000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint; position:relative;">
+                CONFIRA NOSSOS
+                </h1>
+                <h1 style="top:280px; left:50%; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; font-family:Exo; color:#ffffff; width:10000px; text-transform:none; border-style:solid; border-color:#000; background-color:transparent; background-repeat:no-repeat; cursor:auto;" class="ls-l ls-hide-desktop ls-hide-tablet ls-text-layer" data-ls="offsetxin:-200; durationin:1500; delayin:200; easingin:easeOutQuint; offsetxout:-100; durationout:1500; easingout:easeOutQuint;">
+                PRODUTOS OFFSHORE
                 </h1>
                
                 <div style="top:520px; left:50%; text-align:center; background-size:inherit; background-position:inherit; font-size:24px; width:1000px;" class="ls-l ls-hide-desktop ls-hide-tablet ls-html-layer" data-ls="offsetyin:50; durationin:1500; delayin:900; easingin:easeOutQuint; offsetyout:50; durationout:1500; easingout:easeOutQuint; position:relative;">
                     <div class="ls-btn-group">
-                        <a href="about.html" class="vs-btn ls-hero-btn">SAIBA MAIS<i class="far fa-arrow-right"></i></a>
+                        <a href="{{url('/')}}/fale-conosco" class="vs-btn ls-hero-btn">SAIBA MAIS<i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -163,65 +165,6 @@ indústria On-shore e Off-shore com atendimento especializado em resolução de 
             </div>
         </section>
     </div>
-    <!--==============================
-    Service Area
-    ==============================-->
-   
-    <!--==============================
-    Counter Area
-    ==============================-->
-    <!-- <div class="position-relative ">
-        <div class="counter-shape1"></div>
-        <div class="bg-black z-index-common space" data-bg-src="assets/img/bg/counter-bg-1-1.jpg">
-            <div class="container wow fadeInUp" data-wow-delay="0.2s">
-                <div class="row justify-content-between gy-4">
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-media">
-                            <div class="counter-media__icon"><img src="assets/img/icon/count-1-1.png" alt="icon"></div>
-                            <div class="media-body">
-                                <span class="counter-media__number h1 text-white">858</span>
-                                <p class="counter-media__title text-white">Successful Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-media">
-                            <div class="counter-media__icon"><img src="assets/img/icon/count-1-2.png" alt="icon"></div>
-                            <div class="media-body">
-                                <span class="counter-media__number h1 text-white">650</span>
-                                <p class="counter-media__title text-white">Media Activities</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-media">
-                            <div class="counter-media__icon"><img src="assets/img/icon/count-1-3.png" alt="icon"></div>
-                            <div class="media-body">
-                                <span class="counter-media__number h1 text-white">567</span>
-                                <p class="counter-media__title text-white">Skilled Experts</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-media">
-                            <div class="counter-media__icon"><img src="assets/img/icon/count-1-4.png" alt="icon"></div>
-                            <div class="media-body">
-                                <span class="counter-media__number h1 text-white">28k</span>
-                                <p class="counter-media__title text-white">Happy Clients</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!--==============================
-    Team Area
-    ==============================-->
-   
-    <!--==============================
-    FAQ Area
-    ==============================-->
     <section class="faq-wrap1  ">
         <div class="faq-shape1" data-bg-src="assets/img/bg/faq-bg-1-1.jpg"></div>
         <div class="faq-shape2" data-bg-src="assets/img/bg/faq-bg-1-2.jpg"></div>

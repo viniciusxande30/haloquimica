@@ -1,22 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @include('includes.top')
 @include('includes.menu')
 <div class="container">
-        <input type="text" id="searchInput" style="margin-bottom:40px" placeholder="Digite o nome do produto">
+        <!-- <input type="text" id="searchInput" style="margin-bottom:40px" placeholder="Digite o nome do produto"> -->
+        <h3 style="text-align:center">Diretório de laudos</h2>
         <div class="row" id="results"></div>
     </div>
 

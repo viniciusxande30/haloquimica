@@ -83,7 +83,7 @@ html {
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cnpjModalLabel">Insira o seu CNPJ</h5>
+        <h5 class="modal-title" id="cnpjModalLabel">Insira o seu CPF ou CNPJ</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -91,7 +91,7 @@ html {
       <div class="modal-body">
         <form id="cnpjForm">
           <div class="form-group">
-            <label for="cnpjInput">CNPJ:</label>
+            <label for="cnpjInput">CPF ou CNPJ:</label>
             <input type="text" class="form-control" id="cnpjInput" placeholder="Digite o CNPJ" oninput="mascaraCNPJ(this)" required>
           </div>
         </form>
@@ -104,7 +104,7 @@ html {
   </div>
 </div>
 
-<script>
+<!-- <script>
   $(document).ready(function () {
     $("#enviarBtn").click(function () {
       // Obter o valor do CNPJ
@@ -129,6 +129,46 @@ html {
     cnpj = cnpj.replace(/(\d{4})(\d)/, '$1-$2');
     cnpjInput.value = cnpj;
   }
+</script> -->
+
+
+<script>
+  $(document).ready(function () {
+    $("#enviarBtn").click(function () {
+      // Obter o valor do CNPJ ou CPF
+      var documento = $("#cnpjInput").val().replace(/\D/g, ''); // Remove caracteres não numéricos
+
+      // Verificar se é CPF ou CNPJ
+      var tipoDocumento = documento.length === 11 ? 'CPF' : 'CNPJ';
+
+      // Enviar email para rsfreelas@gmail.com com o documento
+      // Código para enviar o e-mail vai aqui (isso precisa ser feito no lado do servidor).
+
+      // Redirecionar para uma página
+      window.location.href = "{{url('/')}}/diretorio-de-laudos";
+    });
+  });
+
+  function mascaraCNPJ(cnpjInput) {
+    var documento = cnpjInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+    // Verificar se é CPF ou CNPJ
+    var tipoDocumento = documento.length === 11 ? 'CPF' : 'CNPJ';
+
+    if (tipoDocumento === 'CPF') {
+      // Máscara para CPF
+      if (documento.length === 11) {
+        var cpf = documento.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+        cnpjInput.value = cpf;
+      }
+    } else {
+      // Máscara para CNPJ
+      if (documento.length === 14) {
+        var cnpj = documento.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5');
+        cnpjInput.value = cnpj;
+      }
+    }
+  }
 </script>
 
 
@@ -145,7 +185,7 @@ html {
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cnpjModalLabel">Insira o seu CNPJ</h5>
+        <h5 class="modal-title" id="cnpjModalLabel">Insira o seu CPF ou CNPJ</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -153,7 +193,7 @@ html {
       <div class="modal-body">
         <form id="cnpjForm">
           <div class="form-group">
-            <label for="cnpjInputFispq">CNPJ:</label>
+            <label for="cnpjInputFispq">CPF ou CNPJ:</label>
             <input type="text" class="form-control" id="cnpjInputFispq" placeholder="Digite o CNPJ" oninput="mascaraCNPJ(this)" required>
           </div>
         </form>
@@ -166,7 +206,7 @@ html {
   </div>
 </div>
 
-<script>
+<!-- <script>
   $(document).ready(function () {
     $("#enviarBtn2").click(function () {
       // Obter o valor do CNPJ
@@ -191,9 +231,47 @@ html {
     cnpj = cnpj.replace(/(\d{4})(\d)/, '$1-$2');
     cnpjInputFispq.value = cnpj;
   }
+</script> -->
+
+
+<script>
+  $(document).ready(function () {
+    $("#enviarBtn2").click(function () {
+      // Obter o valor do CNPJ ou CPF
+      var documento = $("#cnpjInputFispq").val().replace(/\D/g, ''); // Remove caracteres não numéricos
+
+      // Verificar se é CPF ou CNPJ
+      var tipoDocumento = documento.length === 11 ? 'CPF' : 'CNPJ';
+
+      // Enviar email para rsfreelas@gmail.com com o documento
+      // Código para enviar o e-mail vai aqui (isso precisa ser feito no lado do servidor).
+
+      // Redirecionar para uma página
+      window.location.href = "{{url('/')}}/diretorio-de-fispq";
+    });
+  });
+
+  function mascaraCNPJ(cnpjInputFispq) {
+    var documento = cnpjInputFispq.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+    // Verificar se é CPF ou CNPJ
+    var tipoDocumento = documento.length === 11 ? 'CPF' : 'CNPJ';
+
+    if (tipoDocumento === 'CPF') {
+      // Máscara para CPF
+      if (documento.length === 11) {
+        var cpf = documento.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+        cnpjInputFispq.value = cpf;
+      }
+    } else {
+      // Máscara para CNPJ
+      if (documento.length === 14) {
+        var cnpj = documento.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, '$1.$2.$3/$4-$5');
+        cnpjInputFispq.value = cnpj;
+      }
+    }
+  }
 </script>
-
-
 
 
 

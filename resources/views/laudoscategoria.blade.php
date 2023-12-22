@@ -58,7 +58,7 @@ if (!empty($data)) {
 @include('includes.top')
 @include('includes.menu')
 <div class="container">
-        <input type="text" id="searchInput" style="margin-bottom:40px" placeholder="Digite o nome do produto">
+        <input type="text" id="searchInput" style="margin-bottom:40px" placeholder="Digite o número do lote">
         <div class="row" id="results"></div>
     </div>
 
@@ -89,6 +89,15 @@ if (!empty($data)) {
         .background-image {
             background-image: url(&quot;assets/img/bg/sr-box-bg-1.jpg&quot;);
         }
+        a{
+            color:white;
+            font-weight:bolder;
+        }
+        h3{
+            color:white !important;
+            font-weight:bolder;
+
+        }
     </style>
 
 <?php
@@ -107,7 +116,7 @@ $url_sem_public;
 
 
 $urlSpecial = str_replace("/diretorio-de-laudos", "",url('/'));
-echo $urlSpecial;
+//echo $urlSpecial;
 ?>
 
 
@@ -122,7 +131,7 @@ echo $urlSpecial;
         searchInput.addEventListener("input", function () {
             const searchTerm = searchInput.value.toLowerCase();
             const filteredData = jsonData.filter(item =>
-                item.produto.toLowerCase().includes(searchTerm)
+                item.codigo.toLowerCase().includes(searchTerm)
             );
 
             displayResults(filteredData);
@@ -158,6 +167,8 @@ echo $urlSpecial;
                 // Use a URL dinâmica do item
                 a.href = '{{$url_sem_public}}/categoria/' + item.url;
                 a.textContent = item.produto;
+                h3.textContent = 'Lote: '+ item.codigo  + ' - ';
+
 
                 h3.appendChild(a);
 
