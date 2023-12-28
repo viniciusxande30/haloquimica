@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContatoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/editar-promocao', [App\Http\Controllers\ProdutoController::class,'editarPromocao']);
     Route::post('/editar-promocao', [App\Http\Controllers\ProdutoController::class,'updatePromocao'])->name('updatePromocao');
     });
+
+    Route::get('/contato', [ContatoController::class, 'mostrarFormulario']);
+Route::post('/contato/enviar', [ContatoController::class, 'enviarMensagem']);
+
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -66,7 +71,7 @@ Route::get('/produtos-em-promocao', function () {
 Route::get('/quem-somos', function () {
     return view('quem-somos');
 });
-Route::get('/tabela-de-precos', function () {
+Route::get('/licencas-e-certificacoes', function () {
     return view('tabela-de-precos');
 });
 Route::get('/fale-conosco', function () {

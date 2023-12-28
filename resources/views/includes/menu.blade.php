@@ -98,13 +98,13 @@ if (isDesktop()) {
                                         <a href="{{url('/')}}/quem-somos">Quem Somos</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/')}}/produtos-e-servicos">Produtos e Serviços</a>
+                                        <a href="{{url('/')}}/produtos-e-servicos">Produtos</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/produtos-em-promocao">Promoção<span class="new-label">Confira!</span></a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/')}}/tabela-de-precos">Tabela de Preços</a>
+                                        <a href="{{url('/')}}/licencas-e-certificacoes">Licenças e Certificações</a>
                                     </li>
                                     <li>
                                     <a href="#" data-toggle="modal" data-target="#cnpjModal">Laudos</a>
@@ -147,13 +147,13 @@ if (isDesktop()) {
                                         <a href="{{url('/')}}/quem-somos">Quem Somos</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/')}}/produtos-e-servicos">Produtos e Serviços</a>
+                                        <a href="{{url('/')}}/produtos-e-servicos">Produtos</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/produtos-em-promocao">Promoção</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/')}}/tabela-de-precos">Tabela de Preços</a>
+                                        <a href="{{url('/')}}/licencas-e-certificacoes">Licenças e Certificações</a>
                                     </li>
                                     <li>
                                         <a href="{{url('/')}}/pesquisa-de-satisfacao">Pesquisa de Satisfação</a>
