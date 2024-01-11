@@ -15,6 +15,12 @@ class ContatoController extends Controller
 
     public function enviarMensagem(Request $request)
     {
+        $destinatarios = [
+            'comercial2@rsweb.com.br' => 'Nome Destinatário 1',
+            'admin@haloquimica.com.br' => 'Nome Destinatário 2',
+            // Adicione mais destinatários conforme necessário
+        ];
+        
         // Validação dos dados do formulário
         $request->validate([
             'nome' => 'required|string|max:255',
@@ -29,7 +35,10 @@ class ContatoController extends Controller
             'mensagem' => $request->mensagem,
         ];
 
-        Mail::to('comercial2@rsweb.com.br')->send(new EnviarMensagem($dadosEmail));
+        foreach ($destinatarios as $email => $nome) {
+            Mail::to($email, $nome)->send(new EnviarMensagem($dadosEmail));
+        }
+
 
         return redirect()->back()->with('mensagem', 'E-mail enviado com sucesso!');
     }
