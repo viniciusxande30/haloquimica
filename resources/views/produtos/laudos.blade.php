@@ -55,36 +55,35 @@ $url_sem_public;
 
             <!-- Modal Body -->
             <div class="modal-body">
-                            <form method="post" action="{{ route('produtos.laudoscriar') }}"
-                                enctype="multipart/form-data">
-                                @csrf
-                                <input type="hidden" name="acao" value="criar">
+                <form method="post" action="{{ route('produtos.laudoscriar') }}" enctype="multipart/form-data">
+                    @csrf
+                    <input type="hidden" name="acao" value="criar">
 
-                                <div class="col-md-12 form-group">
-                                    <label for="produto">Nome do Laudo:</label>
-                                    <input type="text" name="produto" id="produto" required>
-                                </div>
+                    <div class="col-md-12 form-group">
+                        <label for="produto">Nome do Laudo:</label>
+                        <input type="text" name="produto" id="produto" required>
+                    </div>
 
-                                <div class="col-md-12 form-group">
-                                    <label for="categorias">Nome da Categoria:</label>
-                                    <input type="text" name="categorias" id="categorias" required>
-                                </div>
+                    <div class="col-md-12 form-group">
+                        <label for="categorias">Nome da Categoria:</label>
+                        <input type="text" name="categorias" id="categorias" required>
+                    </div>
 
-                                <div class="col-md-12 form-group">
-                                    <label for="codigo">Código do Lote:</label>
-                                    <input type="text" name="codigo" id="codigo" required>
-                                </div>
+                    <div class="col-md-12 form-group">
+                        <label for="codigo">Código do Lote:</label>
+                        <input type="text" name="codigo" id="codigo" required>
+                    </div>
 
-                                <div class="col-md-12 form-group">
-                                    <label for="fispq">Laudo (Em PDF):</label>
-                                    <input type="file" name="fispq" id="fispq">
-                                </div>
+                    <div class="col-md-12 form-group">
+                        <label for="fispq">Laudo (Em PDF):</label>
+                        <input type="file" name="fispq" id="fispq">
+                    </div>
 
-                                <div class="text-center">
-                                    <button class="vs-btn" type="submit">Adicionar Laudo</button>
-                                </div>
-                            </form>
-                           
+                    <div class="text-center">
+                        <button class="vs-btn" type="submit">Adicionar Laudo</button>
+                    </div>
+                </form>
+
             </div>
 
             <!-- Modal Footer -->

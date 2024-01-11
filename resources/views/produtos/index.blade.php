@@ -122,7 +122,7 @@ $url_sem_public;
                     <div class="col-lg-12 mb-30">
                         <div class="contact-box">
                             <table class="table">
-                                <thead>
+                                <thead >
                                     <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Produto</th>
@@ -132,7 +132,7 @@ $url_sem_public;
                                         <th scope="col">Ações</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody >
 
                                     @if (!empty($dados))
                                     <h3 class="contact-box__title h4">Lista de Produtos</h3>

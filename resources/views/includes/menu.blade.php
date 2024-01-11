@@ -76,7 +76,7 @@ if (isDesktop()) {
                         <div class="header-info_icon"><i class="fas fa-envelope"></i></div>
                         <div class="media-body">
                             <span class="header-info_label">Fale Conosco por E-mail</span>
-                            <div class="header-info_link"><a href="mailto:halo@haloquimica.com.br">halo@haloquimica.com.br</a></div>
+                            <div class="header-info_link"><a href="mailto:vendas1@haloquimica.com.br">vendas1@haloquimica.com.br</a></div>
                         </div>
                     </div>
                     
